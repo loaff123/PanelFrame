@@ -1,0 +1,25 @@
+name: Linux installed-wheel checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install official build tools
+        run: python -m pip install --index-url https://pypi.org/simple 'setuptools>=77' wheel
+      - name: Build wheel and sdist
+        run: python -c 'from setuptools.build_meta import build_sdist, build_wheel; build_sdist("dist"); build_wheel("dist")'
+      - name: Check native known answers without KiCad
+        run: python tools/native/check_fixtures.py
+      - name: Test installed wheel outside checkout with read-only fixtures
+        run: bash tools/check_installed.sh dist/panelframe-0.1.0a1-py3-none-any.whl

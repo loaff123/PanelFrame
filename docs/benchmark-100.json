@@ -1,0 +1,16 @@
+{
+  "kind": "synthetic performance panel derived from native source rows; not a native acceptance fixture",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "source_rows": 64,
+  "panel_rows": 6400,
+  "instances": 100,
+  "source_bytes": 5087,
+  "panel_bytes": 477635,
+  "complete": true,
+  "verified": true,
+  "recover_seconds": 0.16998906900698785,
+  "verify_seconds": 0.153300506004598,
+  "process_peak_rss_kib_linux": 30328,
+  "report_bytes": 1251571
+}

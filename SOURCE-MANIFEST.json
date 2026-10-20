@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "product": "PanelFrame",
+  "version": "0.1.0a1",
+  "scope": "Public source snapshot excluding this manifest",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 912,
+      "sha256": "0695ef4f16d44f312f442345a10db7f212963ead5334acef491c890bb2d36a0c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 395,
+      "sha256": "acc80e6fb3e19dedb38c352bbe9ea4f64754a82f2fa8dbe6ebdf7395dbd9485f"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1223,
+      "sha256": "6918bd28166023fe24fe74ef702b575688f26f142826462573969ba59c51df36"
+    },
+    {
+      "path": "MANIFEST.in",
+      "bytes": 2313,
+      "sha256": "a2bbc34b41e0ba23a06599bc5909abfd4543dd1eae7bece70a472181cf47135f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10055,
+      "sha256": "0ae3b1c89d5130cf44f0e7c265df43aea1561f22d14ef0adc6e4f9d66b69a29d"
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "bytes": 3624,
+      "sha256": "f2bc4f610d52aac6f9703e249be608bb9a2486d11047fccb54411271a939d566"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 3862,
+      "sha256": "8e8dfd1f62951051824bfb868888fc7029669baafebdbdac0d6477f616018f3f"
+    },
+    {
+      "path": "docs/benchmark-100.json",
+      "bytes": 484,
+      "sha256": "d235d55be0182673a0ab4523621a32915b52f994931ec664ff1648fa3154fd63"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 698,
+      "sha256": "65fd098e66fb2e742286bbce336bd1a3a3ba7115f9737736040fee8f743322d7"
+    },
+    {
+      "path": "src/panelframe/__init__.py",
+      "bytes": 88,
+      "sha256": "50c254b53fd1c191f6b82a14a3d48018dcd73d261b7d2c17ae338b865b192a9c"
+    },
+    {
+      "path": "src/panelframe/__main__.py",
+      "bytes": 47,
+      "sha256": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4"
+    },
+    {
+      "path": "src/panelframe/cli.py",
+      "bytes": 2463,
+      "sha256": "9aeaec511fd6af2dc8115ee52a756d564b3204e538f62545a742b69608f7535f"
+    },
+    {
+      "path": "src/panelframe/matching.py",
+      "bytes": 3895,
+      "sha256": "748194e5d68facfea5f854bf6d4be00cc4fa0b2c84cac4342f16c4dfdc26c4e7"
+    },
+    {
+      "path": "src/panelframe/model.py",
+      "bytes": 9073,
+      "sha256": "9cd7277a37916a38c85afe1092e17baea501f5c1032cd4425cc5ebf4bf2018e3"
+    },
+    {
+      "path": "src/panelframe/reports.py",
+      "bytes": 12095,
+      "sha256": "fb0d787e5c99286b7dc1e2b9ff51f990bb651e3cb3174c995511a0486f72a1d0"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/fixtures/native/LICENSE.board",
+      "bytes": 1069,
+      "sha256": "e3bd2123ddfedf44c2b4078b86e3d6c5be483f3675612bfc6076bbacc03077c8"
+    },
+    {
+      "path": "tests/fixtures/native/PROVENANCE.md",
+      "bytes": 7154,
+      "sha256": "27138d9e0ce90de413f9573052a1be70fd20ed4356a89adab565e36a9ed6789b"
+    },
+    {
+      "path": "tests/fixtures/native/boards/USB-C-FUSB302-PI.kicad_pcb",
+      "bytes": 807798,
+      "sha256": "2f3b4a62d4034342854fe1ac1c47c62f289756875668acf0320e72ff7868241d"
+    },
+    {
+      "path": "tests/fixtures/native/contract-default.json",
+      "bytes": 364,
+      "sha256": "e7483a777b1ae8ab1f0ee42b13349e4fde46b721deebd243a2705227612cfc58"
+    },
+    {
+      "path": "tests/fixtures/native/contract-mixed.json",
+      "bytes": 370,
+      "sha256": "273d66358302d6b07c71dce540ee3cf65db64edd33247cda5ad3ddc5af503163"
+    },
+    {
+      "path": "tests/fixtures/native/contract-varied-edited.json",
+      "bytes": 370,
+      "sha256": "a098c36134851c7b121f3001798a4fef2925dfc413c5a6b645af321ff2844a21"
+    },
+    {
+      "path": "tests/fixtures/native/contract-varied.json",
+      "bytes": 370,
+      "sha256": "bbc76e6ceb3fcf8c687e4884e82acd6ec4940337f83146c881e83cf51dcd1841"
+    },
+    {
+      "path": "tests/fixtures/native/expected.json",
+      "bytes": 6050,
+      "sha256": "30a1b0c0902505fdefa4604d70018514a98b52b6fd82ebc9911d13c5a733de71"
+    },
+    {
+      "path": "tests/fixtures/native/known-answer-check.json",
+      "bytes": 2274,
+      "sha256": "a597e6abd17e686e494fe8365f3bd1ca40a8d699b9f7a047e4e34de42815375d"
+    },
+    {
+      "path": "tests/fixtures/native/panel-default.csv",
+      "bytes": 20337,
+      "sha256": "205895c277eaee562a37fa244746b02457d5f307fda39c6688225c1030aa608c"
+    },
+    {
+      "path": "tests/fixtures/native/panel-mixed-bottom-negated.csv",
+      "bytes": 20327,
+      "sha256": "15abd789d878aeecb9a5acfd49836b3cce18ef3088aaa3d7f33996ab079709df"
+    },
+    {
+      "path": "tests/fixtures/native/panel-mixed.csv",
+      "bytes": 20315,
+      "sha256": "e89b94095c2960f821e56bba849671dffe094f812c0b5fd631ab7aaafeefb214"
+    },
+    {
+      "path": "tests/fixtures/native/panel-varied-edited.csv",
+      "bytes": 30171,
+      "sha256": "e3a0a66f7e8ec68bbf5be539c61905f2a12a36686bc56dfb468d290be8d6365b"
+    },
+    {
+      "path": "tests/fixtures/native/panel-varied.csv",
+      "bytes": 30171,
+      "sha256": "f92861a397a8de6bca082bd8463d7637db0fc0d4cf73cf93ede3bff4f5422ff1"
+    },
+    {
+      "path": "tests/fixtures/native/preset-default.json",
+      "bytes": 5256,
+      "sha256": "a23e2a7b2d800da46fae9929052b5e3a2640fbf720dc49b5f3c1d06ffbbd2dd8"
+    },
+    {
+      "path": "tests/fixtures/native/preset-mixed.json",
+      "bytes": 5256,
+      "sha256": "d86281824f8a88fd1aeac53b9e5abec04c25e6e5967bcf0a30aaca580ea02b87"
+    },
+    {
+      "path": "tests/fixtures/native/preset-varied.json",
+      "bytes": 5239,
+      "sha256": "48d29a953eb5e33ee33a832626cc1c5b0d6dee5d9731c6721b907d237216fbe2"
+    },
+    {
+      "path": "tests/fixtures/native/provenance.json",
+      "bytes": 3677,
+      "sha256": "b51a852f3ef2b4d5a4da378972682a08007439766eb49a0b976af14c06c940c1"
+    },
+    {
+      "path": "tests/fixtures/native/replay-evidence/generation.json",
+      "bytes": 7911,
+      "sha256": "439e4be5255e361c725d91af60bdd02a1103d55a57802b480dfbd91bb3ddef63"
+    },
+    {
+      "path": "tests/fixtures/native/replay-evidence/known-answer-check.json",
+      "bytes": 2274,
+      "sha256": "29ba26e74ca08f09270b86dfa5c9f49485b2802a8cf308f8ead14f87d2ed9b26"
+    },
+    {
+      "path": "tests/fixtures/native/replay-evidence/reproduction-check.json",
+      "bytes": 2147,
+      "sha256": "3de1a96a471d415a77107e7939293605b22168535b98a680aeecd60e0aab279f"
+    },
+    {
+      "path": "tests/fixtures/native/source-mixed-bottom-negated.csv",
+      "bytes": 4970,
+      "sha256": "6e62baea42922074d6ae6c57d49c8518e8bb0734a626bc186346a60342b66e36"
+    },
+    {
+      "path": "tests/fixtures/native/source-mixed.csv",
+      "bytes": 4969,
+      "sha256": "16f281e80df6932984440645a9d5eddef5a04b01ee5726fde972e074757f9926"
+    },
+    {
+      "path": "tests/fixtures/native/source-varied.csv",
+      "bytes": 4979,
+      "sha256": "d48703fd8498a3051b557146fe44c393aaaec773d6bafe837e677e132518592a"
+    },
+    {
+      "path": "tests/fixtures/native/source.csv",
+      "bytes": 5087,
+      "sha256": "5df8ece3b2c1a960b3e8c2f4278574538b75dd919ef5fd3d3254bcd3f5d8ff92"
+    },
+    {
+      "path": "tests/oracle.py",
+      "bytes": 5267,
+      "sha256": "3fdc555a51838b7ad4b2072bbb648ece3a9aab6bf065e051f53094a16794b9e4"
+    },
+    {
+      "path": "tests/support.py",
+      "bytes": 969,
+      "sha256": "4ba947ddff7ca311172e9112e8bef81df4f158ad2c39ce2bd3d2502d0b5cb1a4"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 3714,
+      "sha256": "047f838f0645839c1b2df86338f98de74771332239b18647479c63c251ac3fc6"
+    },
+    {
+      "path": "tests/test_core_review.py",
+      "bytes": 7841,
+      "sha256": "f8ea8be00df7ddda6846347553e561e5752041690cffa91808eabb91d70c7bee"
+    },
+    {
+      "path": "tests/test_evidence.py",
+      "bytes": 7676,
+      "sha256": "ccf0130ecd7f94462c7680dd1a86ab55ccddcaf73fc795173f59fb55edad7cde"
+    },
+    {
+      "path": "tests/test_final_review.py",
+      "bytes": 10990,
+      "sha256": "35f99525841bab021ba4959ac5a4f912666f5327027a88658e61171b526a3b91"
+    },
+    {
+      "path": "tests/test_input.py",
+      "bytes": 6770,
+      "sha256": "dcaab01b1abc23432088ac1661c0098c6010dd2b6209469afa858a799c09afab"
+    },
+    {
+      "path": "tests/test_matching.py",
+      "bytes": 4352,
+      "sha256": "ee5b3804d08d3e4cf3a8597fe534ee7881dec0ab2bd963597d775386ae3d6c95"
+    },
+    {
+      "path": "tests/test_native.py",
+      "bytes": 3806,
+      "sha256": "c87637c83cde731b6fcd73b32c6d016e8474a7f006403b77dc08bc98217b8af5"
+    },
+    {
+      "path": "tests/test_oracle.py",
+      "bytes": 15457,
+      "sha256": "5ae840e784527bb1aae636efcf101622875bdaf6c23950af05d1b0a0b4cef63c"
+    },
+    {
+      "path": "tools/benchmark.py",
+      "bytes": 2671,
+      "sha256": "ce5ac5625540ea10aee20e34bbf50c9401ce754053176cd233205fedfde108e4"
+    },
+    {
+      "path": "tools/check_installed.sh",
+      "bytes": 961,
+      "sha256": "8998dd2be0e2ce31902fdc1e396ff323a1f0f12477d69123d3c4879fc8dcca99"
+    },
+    {
+      "path": "tools/native/README.md",
+      "bytes": 2252,
+      "sha256": "fb2db7acc9e3dc453d4d65c428bb4b863a093358417f39b246246a39106440f3"
+    },
+    {
+      "path": "tools/native/check_fixtures.py",
+      "bytes": 4794,
+      "sha256": "1a321a82cdf0c12aa896c23f7c47d0ece6679252aa05213be05d78920e98047a"
+    },
+    {
+      "path": "tools/native/known_answers.py",
+      "bytes": 5452,
+      "sha256": "ee56a3560dcc4f1df90b8eb420d0f0a735169c80261cf7a9502ba120fba17d4f"
+    },
+    {
+      "path": "tools/native/replay.py",
+      "bytes": 8273,
+      "sha256": "0475bd18305959b5f85f1eaa292569967a985812c8f2011587193c34588c8198"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "oracle": "Configuration-derived exact grid arithmetic; no product discovery",
+  "profile": "kicad-9-pos-csv-mm-cartesian",
+  "bounds_kicad_mm": [
+    "100",
+    "74",
+    "66.75",
+    "22"
+  ],
+  "cases": {
+    "default": {
+      "source": "source.csv",
+      "panel": "panel-default.csv",
+      "source_origin": "absolute",
+      "panel_origin": "absolute",
+      "source_rows": 64,
+      "panel_rows": 256,
+      "expected_instances": 4,
+      "transforms": [
+        {
+          "grid_row": 0,
+          "grid_col": 0,
+          "rotation_deg": 90,
+          "tx_mm": "51",
+          "ty_mm": "-186.75"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 1,
+          "rotation_deg": 90,
+          "tx_mm": "76",
+          "ty_mm": "-186.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 0,
+          "rotation_deg": 270,
+          "tx_mm": "221",
+          "ty_mm": "10.25"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 1,
+          "rotation_deg": 270,
+          "tx_mm": "246",
+          "ty_mm": "10.25"
+        }
+      ]
+    },
+    "mixed": {
+      "source": "source-mixed.csv",
+      "panel": "panel-mixed.csv",
+      "source_origin": "drill-place",
+      "panel_origin": "drill-place",
+      "source_rows": 64,
+      "panel_rows": 256,
+      "expected_instances": 4,
+      "transforms": [
+        {
+          "grid_row": 1,
+          "grid_col": 0,
+          "rotation_deg": 90,
+          "tx_mm": "121",
+          "ty_mm": "-116.5"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 0,
+          "rotation_deg": 90,
+          "tx_mm": "121",
+          "ty_mm": "-46.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 1,
+          "rotation_deg": 270,
+          "tx_mm": "156",
+          "ty_mm": "-89.75"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 1,
+          "rotation_deg": 270,
+          "tx_mm": "156",
+          "ty_mm": "-20"
+        }
+      ]
+    },
+    "varied": {
+      "source": "source-varied.csv",
+      "panel": "panel-varied.csv",
+      "source_origin": "drill-place",
+      "panel_origin": "drill-place",
+      "source_rows": 64,
+      "panel_rows": 384,
+      "expected_instances": 6,
+      "transforms": [
+        {
+          "grid_row": 2,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-88.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-62.5"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-36.25"
+        },
+        {
+          "grid_row": 2,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-103.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-77.5"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-51.25"
+        }
+      ]
+    },
+    "varied-edited": {
+      "source": "source-varied.csv",
+      "panel": "panel-varied-edited.csv",
+      "source_origin": "drill-place",
+      "panel_origin": "drill-place",
+      "source_rows": 64,
+      "panel_rows": 384,
+      "expected_instances": 6,
+      "transforms": [
+        {
+          "grid_row": 2,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-88.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-62.5"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-36.25"
+        },
+        {
+          "grid_row": 2,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-103.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-77.5"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-51.25"
+        }
+      ],
+      "complete_handoff": false,
+      "complete_instances": 5,
+      "complete_transforms": [
+        {
+          "grid_row": 2,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-88.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-62.5"
+        },
+        {
+          "grid_row": 0,
+          "grid_col": 1,
+          "rotation_deg": 0,
+          "tx_mm": "126",
+          "ty_mm": "-36.25"
+        },
+        {
+          "grid_row": 2,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-103.75"
+        },
+        {
+          "grid_row": 1,
+          "grid_col": 0,
+          "rotation_deg": 180,
+          "tx_mm": "96",
+          "ty_mm": "-77.5"
+        }
+      ],
+      "edited_transform": {
+        "grid_row": 0,
+        "grid_col": 0,
+        "rotation_deg": 180,
+        "tx_mm": "96",
+        "ty_mm": "-51.25"
+      },
+      "edit": {
+        "reference": "C1",
+        "grid_row": 0,
+        "grid_col": 0,
+        "x_delta_mm": "0.000001",
+        "y_delta_mm": "0",
+        "method": "Native pcbnew footprint move after panelization; one internal unit"
+      },
+      "missing_pose_rows": 1,
+      "extra_pose_rows": 1
+    }
+  },
+  "unqualified_controls": {
+    "bottom_negated": {
+      "source": "source-mixed-bottom-negated.csv",
+      "panel": "panel-mixed-bottom-negated.csv",
+      "reason": "Exported with --bottom-negate-x; outside the declared common Cartesian profile"
+    }
+  }
+}

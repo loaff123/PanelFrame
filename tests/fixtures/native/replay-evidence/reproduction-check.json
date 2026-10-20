@@ -1,0 +1,62 @@
+{
+  "native_replay_exit_code": 0,
+  "kicad": "9.0.2",
+  "kikit": "1.8.1",
+  "executed_script_sha256": "0475bd18305959b5f85f1eaa292569967a985812c8f2011587193c34588c8198",
+  "checks": {
+    "panel-default.csv": {
+      "rows": 256,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": false,
+      "regenerated_sha256": "406216f6e9b3e7c181a8ee54ee9e83e2aed8ecc04c1ed89fd2136cad1633580d"
+    },
+    "panel-mixed-bottom-negated.csv": {
+      "rows": 256,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": false,
+      "regenerated_sha256": "3daced5977b3bc637afd4fc9421521a83c534c66124bd1e3565a6ac20384f544"
+    },
+    "panel-mixed.csv": {
+      "rows": 256,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": false,
+      "regenerated_sha256": "e52b7b0ff3799af89bb9445967762e920487d489b296ee19f921f17b9f918154"
+    },
+    "panel-varied-edited.csv": {
+      "rows": 384,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": false,
+      "regenerated_sha256": "85cc122b4c62afa641a238bc33adfd189de0a6ac202ea1a3f6329476ba8cb900"
+    },
+    "panel-varied.csv": {
+      "rows": 384,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": false,
+      "regenerated_sha256": "6a94eb32cbc13e0e66cbb15041f3c547be9a1bb2826937b1c5be4e0ce517b91d"
+    },
+    "source-mixed-bottom-negated.csv": {
+      "rows": 64,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": true,
+      "regenerated_sha256": "6e62baea42922074d6ae6c57d49c8518e8bb0734a626bc186346a60342b66e36"
+    },
+    "source-mixed.csv": {
+      "rows": 64,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": true,
+      "regenerated_sha256": "16f281e80df6932984440645a9d5eddef5a04b01ee5726fde972e074757f9926"
+    },
+    "source-varied.csv": {
+      "rows": 64,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": true,
+      "regenerated_sha256": "d48703fd8498a3051b557146fe44c393aaaec773d6bafe837e677e132518592a"
+    },
+    "source.csv": {
+      "rows": 64,
+      "exact_pose_multiset_equal": true,
+      "byte_equal": true,
+      "regenerated_sha256": "5df8ece3b2c1a960b3e8c2f4278574538b75dd919ef5fd3d3254bcd3f5d8ff92"
+    }
+  }
+}

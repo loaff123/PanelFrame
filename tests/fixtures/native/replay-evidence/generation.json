@@ -1,0 +1,319 @@
+{
+  "kicad": "9.0.2",
+  "pcbnew": "9.0.2",
+  "kikit": "1.8.1",
+  "commands": [
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "-o",
+      "source.csv",
+      "boards/USB-C-FUSB302-PI.kicad_pcb"
+    ],
+    [
+      "kikit",
+      "panelize",
+      "--layout",
+      "grid; rows: 2; cols: 2; hspace: 3mm; vspace: 3mm; rotation: 90deg; alternation: rows",
+      "--tabs",
+      "full",
+      "--cuts",
+      "vcuts",
+      "--post",
+      "refill: false",
+      "--dump",
+      "preset-default.json",
+      "boards/USB-C-FUSB302-PI.kicad_pcb",
+      "boards/panel-default.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "-o",
+      "panel-default.csv",
+      "boards/panel-default.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--use-drill-file-origin",
+      "-o",
+      "source-mixed.csv",
+      "boards/source-mixed.kicad_pcb"
+    ],
+    [
+      "kikit",
+      "panelize",
+      "--layout",
+      "grid; rows: 2; cols: 2; hspace: 3mm; vspace: 3mm; rotation: 90deg; alternation: cols",
+      "--tabs",
+      "full",
+      "--cuts",
+      "vcuts",
+      "--post",
+      "refill: false",
+      "--dump",
+      "preset-mixed.json",
+      "boards/source-mixed.kicad_pcb",
+      "boards/panel-mixed.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--use-drill-file-origin",
+      "-o",
+      "panel-mixed.csv",
+      "boards/panel-mixed.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--use-drill-file-origin",
+      "-o",
+      "source-varied.csv",
+      "boards/source-varied.kicad_pcb"
+    ],
+    [
+      "kikit",
+      "panelize",
+      "--layout",
+      "grid; rows: 3; cols: 2; hspace: 7.5mm; vspace: 4.25mm; rotation: 180deg; alternation: cols",
+      "--tabs",
+      "full",
+      "--cuts",
+      "vcuts",
+      "--post",
+      "refill: false",
+      "--dump",
+      "preset-varied.json",
+      "--page",
+      "anchor: tl; posx: 35mm; posy: 45mm",
+      "boards/source-varied.kicad_pcb",
+      "boards/panel-varied.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--use-drill-file-origin",
+      "-o",
+      "panel-varied.csv",
+      "boards/panel-varied.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--use-drill-file-origin",
+      "-o",
+      "panel-varied-edited.csv",
+      "boards/panel-varied-edited.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--use-drill-file-origin",
+      "--bottom-negate-x",
+      "-o",
+      "source-mixed-bottom-negated.csv",
+      "boards/source-mixed.kicad_pcb"
+    ],
+    [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--use-drill-file-origin",
+      "--bottom-negate-x",
+      "-o",
+      "panel-mixed-bottom-negated.csv",
+      "boards/panel-mixed.kicad_pcb"
+    ]
+  ],
+  "configuration": {
+    "default": {
+      "source": "source.csv",
+      "panel": "panel-default.csv",
+      "rows": 2,
+      "cols": 2,
+      "hspace": "3",
+      "vspace": "3",
+      "rotation": 90,
+      "alternation": "rows",
+      "page_anchor": "mt",
+      "page_position": [
+        "148.5",
+        "20"
+      ],
+      "source_aux": [
+        "0",
+        "0"
+      ],
+      "panel_aux": [
+        "0",
+        "0"
+      ],
+      "source_origin": "absolute",
+      "panel_origin": "absolute"
+    },
+    "mixed": {
+      "source": "source-mixed.csv",
+      "panel": "panel-mixed.csv",
+      "rows": 2,
+      "cols": 2,
+      "hspace": "3",
+      "vspace": "3",
+      "rotation": 90,
+      "alternation": "cols",
+      "page_anchor": "mt",
+      "page_position": [
+        "148.5",
+        "20"
+      ],
+      "source_aux": [
+        "120",
+        "80"
+      ],
+      "panel_aux": [
+        "10",
+        "20"
+      ],
+      "source_origin": "drill-place",
+      "panel_origin": "drill-place"
+    },
+    "varied": {
+      "source": "source-varied.csv",
+      "panel": "panel-varied.csv",
+      "rows": 3,
+      "cols": 2,
+      "hspace": "7.5",
+      "vspace": "4.25",
+      "rotation": 180,
+      "alternation": "cols",
+      "page_anchor": "tl",
+      "page_position": [
+        "35",
+        "45"
+      ],
+      "source_aux": [
+        "111.25",
+        "77.5"
+      ],
+      "panel_aux": [
+        "-5.5",
+        "12.25"
+      ],
+      "source_origin": "drill-place",
+      "panel_origin": "drill-place"
+    }
+  },
+  "native_outline_endpoint_bounds_mm": [
+    "100",
+    "74",
+    "267/4",
+    "22"
+  ],
+  "negative_edit": {
+    "reference": "C1",
+    "before_kicad_internal_units": [
+      71750000,
+      57523500
+    ],
+    "after_kicad_internal_units": [
+      71750001,
+      57523500
+    ],
+    "internal_units_per_mm": 1000000
+  },
+  "generated_files_sha256": {
+    "boards/USB-C-FUSB302-PI.kicad_pcb": "2f3b4a62d4034342854fe1ac1c47c62f289756875668acf0320e72ff7868241d",
+    "boards/panel-default.kicad_pcb": "4d3af1558bd7be81d48501a5a2058b2a1584c26fc8799b2a57060020ebe8a960",
+    "boards/panel-mixed.kicad_pcb": "2457e5789cdd82d7bdf20c7a3b907e2a84c97cf4b291501de4ffd1439d9aa04c",
+    "boards/panel-varied-edited.kicad_pcb": "d4bcdd2ee80a15d6aaf1f7f024b9d75b5212ef821b2d5eb8adebc095684ce1e8",
+    "boards/panel-varied.kicad_pcb": "acc9d8116a0f89ddc87312343d40fb74090585d5bae19a47a221a9c141e3b739",
+    "boards/source-mixed.kicad_pcb": "1668712d25c08e5c69e575647cde05df7f10f157050d11ab8b03abac7545a057",
+    "boards/source-varied.kicad_pcb": "88255c401419e474d82235759d9620e24b3f48f201f39b5cb50e070b1d797299",
+    "expected.json": "30a1b0c0902505fdefa4604d70018514a98b52b6fd82ebc9911d13c5a733de71",
+    "panel-default.csv": "6f40d8b9d190d052d5c170ddbdec5eb8e002b5254d171837a932041e44452946",
+    "panel-mixed-bottom-negated.csv": "15abd789d878aeecb9a5acfd49836b3cce18ef3088aaa3d7f33996ab079709df",
+    "panel-mixed.csv": "d39b0d0599870ef7d4c924114e2d2f250d615e7ab11a33dd44dd8cede6b5bf73",
+    "panel-varied-edited.csv": "e3a0a66f7e8ec68bbf5be539c61905f2a12a36686bc56dfb468d290be8d6365b",
+    "panel-varied.csv": "f92861a397a8de6bca082bd8463d7637db0fc0d4cf73cf93ede3bff4f5422ff1",
+    "preset-default.json": "8062c116cd6c08e9876de163b4c0b3e060758f75f8f6c6e20cb37fdba5f0116f",
+    "preset-mixed.json": "6c757b009776e743333cc918427aec2f47b845ec636d559360fc64d246b0e35b",
+    "preset-varied.json": "48d29a953eb5e33ee33a832626cc1c5b0d6dee5d9731c6721b907d237216fbe2",
+    "source-mixed-bottom-negated.csv": "6e62baea42922074d6ae6c57d49c8518e8bb0734a626bc186346a60342b66e36",
+    "source-mixed.csv": "16f281e80df6932984440645a9d5eddef5a04b01ee5726fde972e074757f9926",
+    "source-varied.csv": "d48703fd8498a3051b557146fe44c393aaaec773d6bafe837e677e132518592a",
+    "source.csv": "5df8ece3b2c1a960b3e8c2f4278574538b75dd919ef5fd3d3254bcd3f5d8ff92"
+  },
+  "record_normalization": "Public normalized command record, not verbatim raw execution output: machine-specific KiKit executable paths are replaced by kikit, board arguments are relative boards/... paths, and machine-specific KiCad configuration hashes are omitted."
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-10-19",
+  "source": {
+    "repository": "https://github.com/bentwire/USB-C-FUSB302-PI",
+    "commit": "7d95292262b42767bbeefebadb6bafe055923d50",
+    "board": "boards/USB-C-FUSB302-PI.kicad_pcb",
+    "license": "LICENSE.board",
+    "license_id": "MIT",
+    "copyright": "Copyright (c) 2023 Mike Panetta"
+  },
+  "native_tools": {
+    "kicad-cli": "9.0.2",
+    "pcbnew": "9.0.2",
+    "kikit": "1.8.1"
+  },
+  "qualified_profile": "kicad-9-pos-csv-mm-cartesian",
+  "preserved_research_exports": [
+    "source.csv",
+    "panel-default.csv",
+    "source-mixed.csv",
+    "panel-mixed.csv"
+  ],
+  "new_native_exports": [
+    "source-varied.csv",
+    "panel-varied.csv",
+    "panel-varied-edited.csv",
+    "source-mixed-bottom-negated.csv",
+    "panel-mixed-bottom-negated.csv"
+  ],
+  "unqualified_controls": [
+    "source-mixed-bottom-negated.csv",
+    "panel-mixed-bottom-negated.csv"
+  ],
+  "controlled_native_mutations": {
+    "mixed_source": "Flip C1/R1/U1; set U2 angle to 17.125 degrees; change auxiliary origin",
+    "varied_source": "Only auxiliary-origin setting changes",
+    "varied_edited_panel": "Move one C1 by one KiCad internal unit (+0.000001 mm X) after native panelization"
+  },
+  "native_replay": "tools/native/replay.py",
+  "independent_known_answer_checker": "tools/native/check_fixtures.py",
+  "independent_expected_transforms": "tools/native/known_answers.py",
+  "byte_regeneration_stable": false,
+  "reproduction_criterion": "Exact pose multisets and configuration-derived transforms; repeated-reference row order and native UUIDs may change",
+  "files_sha256": {
+    "boards/USB-C-FUSB302-PI.kicad_pcb": "2f3b4a62d4034342854fe1ac1c47c62f289756875668acf0320e72ff7868241d",
+    "contract-default.json": "e7483a777b1ae8ab1f0ee42b13349e4fde46b721deebd243a2705227612cfc58",
+    "contract-mixed.json": "273d66358302d6b07c71dce540ee3cf65db64edd33247cda5ad3ddc5af503163",
+    "contract-varied-edited.json": "a098c36134851c7b121f3001798a4fef2925dfc413c5a6b645af321ff2844a21",
+    "contract-varied.json": "bbc76e6ceb3fcf8c687e4884e82acd6ec4940337f83146c881e83cf51dcd1841",
+    "expected.json": "30a1b0c0902505fdefa4604d70018514a98b52b6fd82ebc9911d13c5a733de71",
+    "panel-default.csv": "205895c277eaee562a37fa244746b02457d5f307fda39c6688225c1030aa608c",
+    "panel-mixed-bottom-negated.csv": "15abd789d878aeecb9a5acfd49836b3cce18ef3088aaa3d7f33996ab079709df",
+    "panel-mixed.csv": "e89b94095c2960f821e56bba849671dffe094f812c0b5fd631ab7aaafeefb214",
+    "panel-varied-edited.csv": "e3a0a66f7e8ec68bbf5be539c61905f2a12a36686bc56dfb468d290be8d6365b",
+    "panel-varied.csv": "f92861a397a8de6bca082bd8463d7637db0fc0d4cf73cf93ede3bff4f5422ff1",
+    "preset-default.json": "a23e2a7b2d800da46fae9929052b5e3a2640fbf720dc49b5f3c1d06ffbbd2dd8",
+    "preset-mixed.json": "d86281824f8a88fd1aeac53b9e5abec04c25e6e5967bcf0a30aaca580ea02b87",
+    "preset-varied.json": "48d29a953eb5e33ee33a832626cc1c5b0d6dee5d9731c6721b907d237216fbe2",
+    "replay-evidence/generation.json": "439e4be5255e361c725d91af60bdd02a1103d55a57802b480dfbd91bb3ddef63",
+    "source-mixed-bottom-negated.csv": "6e62baea42922074d6ae6c57d49c8518e8bb0734a626bc186346a60342b66e36",
+    "source-mixed.csv": "16f281e80df6932984440645a9d5eddef5a04b01ee5726fde972e074757f9926",
+    "source-varied.csv": "d48703fd8498a3051b557146fe44c393aaaec773d6bafe837e677e132518592a",
+    "source.csv": "5df8ece3b2c1a960b3e8c2f4278574538b75dd919ef5fd3d3254bcd3f5d8ff92",
+    "LICENSE.board": "e3bd2123ddfedf44c2b4078b86e3d6c5be483f3675612bfc6076bbacc03077c8",
+    "replay-evidence/reproduction-check.json": "3de1a96a471d415a77107e7939293605b22168535b98a680aeecd60e0aab279f"
+  }
+}

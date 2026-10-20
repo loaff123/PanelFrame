@@ -1,0 +1,61 @@
+{
+  "oracle": "Configuration-derived exact grid arithmetic; no product discovery",
+  "checks": {
+    "default": {
+      "source_rows": 64,
+      "panel_rows": 256,
+      "missing_pose_rows": 0,
+      "extra_pose_rows": 0,
+      "known_transforms_match": true,
+      "expected_negative": false,
+      "source_bottom_rows": 0,
+      "panel_bottom_rows": 0
+    },
+    "mixed": {
+      "source_rows": 64,
+      "panel_rows": 256,
+      "missing_pose_rows": 0,
+      "extra_pose_rows": 0,
+      "known_transforms_match": true,
+      "expected_negative": false,
+      "source_bottom_rows": 3,
+      "panel_bottom_rows": 12
+    },
+    "varied": {
+      "source_rows": 64,
+      "panel_rows": 384,
+      "missing_pose_rows": 0,
+      "extra_pose_rows": 0,
+      "known_transforms_match": true,
+      "expected_negative": false,
+      "source_bottom_rows": 0,
+      "panel_bottom_rows": 0
+    },
+    "varied-edited": {
+      "source_rows": 64,
+      "panel_rows": 384,
+      "missing_pose_rows": 1,
+      "extra_pose_rows": 1,
+      "known_transforms_match": false,
+      "expected_negative": true,
+      "source_bottom_rows": 0,
+      "panel_bottom_rows": 0
+    },
+    "bottom_negated_control": {
+      "qualifies_for_profile": false,
+      "verified_only_bottom_x_changed": true,
+      "note": "The CSV cannot establish export settings; a false declaration is not detectable in general."
+    }
+  },
+  "csv_sha256": {
+    "panel-default.csv": "6f40d8b9d190d052d5c170ddbdec5eb8e002b5254d171837a932041e44452946",
+    "panel-mixed-bottom-negated.csv": "15abd789d878aeecb9a5acfd49836b3cce18ef3088aaa3d7f33996ab079709df",
+    "panel-mixed.csv": "d39b0d0599870ef7d4c924114e2d2f250d615e7ab11a33dd44dd8cede6b5bf73",
+    "panel-varied-edited.csv": "e3a0a66f7e8ec68bbf5be539c61905f2a12a36686bc56dfb468d290be8d6365b",
+    "panel-varied.csv": "f92861a397a8de6bca082bd8463d7637db0fc0d4cf73cf93ede3bff4f5422ff1",
+    "source-mixed-bottom-negated.csv": "6e62baea42922074d6ae6c57d49c8518e8bb0734a626bc186346a60342b66e36",
+    "source-mixed.csv": "16f281e80df6932984440645a9d5eddef5a04b01ee5726fde972e074757f9926",
+    "source-varied.csv": "d48703fd8498a3051b557146fe44c393aaaec773d6bafe837e677e132518592a",
+    "source.csv": "5df8ece3b2c1a960b3e8c2f4278574538b75dd919ef5fd3d3254bcd3f5d8ff92"
+  }
+}

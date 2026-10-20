@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "profile": "kicad-9-pos-csv-mm-cartesian",
+  "source_sha256": "16f281e80df6932984440645a9d5eddef5a04b01ee5726fde972e074757f9926",
+  "panel_sha256": "e89b94095c2960f821e56bba849671dffe094f812c0b5fd631ab7aaafeefb214",
+  "source_origin": "drill-place",
+  "panel_origin": "drill-place",
+  "expected_instances": 4,
+  "excluded_panel_records": []
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "profile": "kicad-9-pos-csv-mm-cartesian",
+  "source_sha256": "5df8ece3b2c1a960b3e8c2f4278574538b75dd919ef5fd3d3254bcd3f5d8ff92",
+  "panel_sha256": "205895c277eaee562a37fa244746b02457d5f307fda39c6688225c1030aa608c",
+  "source_origin": "absolute",
+  "panel_origin": "absolute",
+  "expected_instances": 4,
+  "excluded_panel_records": []
+}
