@@ -1,9 +1,24 @@
 # Verification and reproduction
 
-Verification date: 2026-10-19. This is a local alpha build. Hosted CI and
-manufacturer qualification are not implied.
+Local verification date: 2026-10-19. Hosted verification date: 2026-10-20.
+This is an alpha source distribution. Manufacturer qualification is not implied.
 
-## Executed checks
+## Hosted checks
+
+[GitHub Actions run 39350133348](https://github.com/loaff123/PanelFrame/actions/runs/39350133348)
+passed for source commit `2b9803a3315c35b0a93b85e615fe9e481ed7c0c0`:
+
+- Linux/Python 3.11, 3.12 and 3.13 each built the wheel and source distribution.
+- Each interpreter passed all 93 installed-wheel tests, with no failures or
+  skips, outside the checkout with read-only copies of tests and fixtures.
+- Each interpreter passed the retained native known-answer checks without
+  installing KiCad or KiKit. Hosted CI does not run native fixture regeneration
+  or the separately recorded source-distribution rebuild check.
+
+The source commit contains the reviewed snapshot. Later documentation updates
+have separate workflow runs visible in the repository's Actions history.
+
+## Local executed checks
 
 - All 93 test methods pass on Linux/Python 3.12.14, with no failures or skips.
   The installed-wheel tests run outside the source checkout in a fresh virtual
@@ -61,8 +76,8 @@ Reproduce them using `tools/benchmark.py` with an installed package or
 
 ## Qualification limits
 
-The configured Linux CI matrix covers Python 3.11, 3.12 and 3.13, but hosted CI
-and the other interpreter versions have not run. Other KiCad exporter versions,
+The executed Linux CI matrix covers Python 3.11, 3.12 and 3.13. Other Python
+versions and other KiCad exporter versions,
 Windows/macOS filesystem behavior, mirrored panels, assembler-specific rotations
 and tolerance fitting are not qualified. No physical board, vendor submission,
 copper comparison, electrical test or manufacturing approval is implied.

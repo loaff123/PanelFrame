@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10055,
-      "sha256": "0ae3b1c89d5130cf44f0e7c265df43aea1561f22d14ef0adc6e4f9d66b69a29d"
+      "bytes": 10833,
+      "sha256": "112a8e16915fb32d07a574f8eec098586afc8f6da06fc61da6fb62d407a5abc5"
     },
     {
       "path": "docs/DESIGN.md",
@@ -36,8 +36,8 @@
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 3862,
-      "sha256": "8e8dfd1f62951051824bfb868888fc7029669baafebdbdac0d6477f616018f3f"
+      "bytes": 4656,
+      "sha256": "b4de8dec01bfe2ae912ae61a4f723525cb59477ba99bdc1386122c16b8d518b9"
     },
     {
       "path": "docs/benchmark-100.json",

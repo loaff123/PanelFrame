@@ -6,8 +6,9 @@ an offsets file only when every source row appears at the exact transformed
 pose in every recognized copy, the copy count matches your declaration, and
 every panel row is mapped or explicitly excluded.
 
-**Alpha, local-only tool.** The working package name has not been checked for
-public-registry availability. Python 3.11+; standard library only at runtime.
+**Alpha, source-only distribution.** Runs locally with Python 3.11+ and only
+the standard library at runtime. No public package-registry release is provided;
+the working package name has not been checked for registry availability.
 KiCad and KiKit are needed only to regenerate development fixtures.
 
 ## When it helps
@@ -39,14 +40,22 @@ is invisible to this model.
 
 ## Install and try the retained native example
 
-Install the supplied wheel without fetching dependencies:
+Build and install a wheel from this repository on Linux with Python 3.11+.
+The build-tool installation uses the official Python package registry; the
+resulting PanelFrame wheel has no runtime dependencies.
 
 ```sh
-python -m pip install --no-deps --no-index /path/to/panelframe-0.1.0a1-py3-none-any.whl
+git clone https://github.com/loaff123/PanelFrame.git
+cd PanelFrame
+python -m venv .venv
+. .venv/bin/activate
+python -m pip install --index-url https://pypi.org/simple 'setuptools>=77' wheel
+python -c 'from setuptools.build_meta import build_wheel; build_wheel("dist")'
+python -m pip install --no-deps --no-index dist/panelframe-0.1.0a1-py3-none-any.whl
 panelframe --help
 ```
 
-The source archive includes an MIT-licensed real-board native fixture:
+The repository includes an MIT-licensed real-board native fixture:
 
 ```sh
 panelframe inspect tests/fixtures/native/source.csv \
@@ -185,8 +194,12 @@ bash tools/check_installed.sh dist/panelframe-0.1.0a1-py3-none-any.whl
 Build tooling is setuptools and wheel, obtained from their official package
 registry if not already installed. CI runs Linux tests against an installed
 wheel from outside the checkout, with a read-only copy of tests/fixtures.
-The hosted workflow has read-only repository permissions; local equivalent
-runs are recorded separately and are not a claim that hosted CI ran.
+The hosted workflow has read-only repository permissions. The
+[verified source run](https://github.com/loaff123/PanelFrame/actions/runs/39350133348)
+passed all 93 installed-wheel tests on Linux with Python 3.11, 3.12 and 3.13,
+with no failures or skips. It also built the wheel/sdist and checked the
+retained native known answers. It did not regenerate fixtures with KiCad/KiKit;
+those local native checks are recorded separately.
 
 Tests cover native 64→256 and 64→384 repeated-reference panels, common-frame
 bottom rows, arbitrary source angles, auxiliary origins, a real native
@@ -199,4 +212,4 @@ See [fixture provenance](tests/fixtures/native/PROVENANCE.md),
 
 Original code is MIT. Board data and derived fixtures retain Mike Panetta's
 separate original MIT notice. No vendor endorsement or name availability is
-claimed. No public package or repository publication is part of this build.
+claimed. Source is published here; no public package-registry release is provided.
